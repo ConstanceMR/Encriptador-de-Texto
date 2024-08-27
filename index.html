@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="assets/archivo-encriptado.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="ancla__logo__header__bco"><img class="logo__header logo__header__bco" src="assets/Logo@2x.png" alt="Logo de Alura"></a>
+        <a href="index.html" class="ancla__logo__header__azul"><img class="logo__header logo__header__azul" src="assets/Logo (1).png" alt="Logo de Alura"></a>
+        <h3 class="header__h3">Encriptador de Texto</h3>
+    </header>
+    <main class="main">
+        <section class="seccion__text__area">
+            <textarea class="text__area" id="text-area" cols="30" rows="10"placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+            <img class="imagen__alerta" src="assets/Frame 1.png" alt="alerta">
+            <div class="botones">
+                <button class="boton__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div></div>
+        </section>
+        <aside class="aside">
+            <div class="div__aside">
+                <textarea class="text__area__aside" id="text-area-mensaje" cols="20" rows="10"></textarea>
+        
+                <div class="text__area__mensaje">
+                    <h3 class="h3__aside">Ningún mensaje fue encontrado</h3>
+                    <p class="p__aside">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="div__boton">
+                    <button class="boton__copiar" onclick="btnCopiar()">Copiar</button>
+                    <button class="boton__borrar" id="limpiar-boton"  onclick="btnBorrar()">Borrar</button>
+                </div>
+            </div>
+        </aside>
+    </main>   
+    <footer class="footer">
+        <ul class="lista__footer">
+            <li class="lista__items__footer">Constanza Rojas</li>
+            <li class="lista__items__footer"><a class="anclas__footer" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li class="lista__items__footer"><a class="anclas__footer" href="https://github.com/" target="_blank">Github</a></li>
+            <li class="lista__items__footer"><a class="anclas__footer" href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
+           
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
